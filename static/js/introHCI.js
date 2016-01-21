@@ -19,8 +19,8 @@ function projectClick(e) { 
     // In an event listener, $(this) is the element that fired the event
     var projectTitle = $(this).find("p").text();
     var jumbotronHeader = $(".jumbotron h1");
-    console.log("Number of matching items:" + jumbotronHeader.length);
-    jumbotronHeader.text(projectTitle);
+    //console.log("Number of matching items:" + jumbotronHeader.length);
+    //jumbotronHeader.text(projectTitle);
 
     var containingProject = $(this).closest(".project");
     var description = $(containingProject).find(".project-description");
@@ -42,8 +42,8 @@ function projectClick(e) { 
 
 function initializePage() {
 	$("#testjs").click(function(e) {
-		$('.jumbotron h1').text("Javascript is connected");
-		$("#testjs").text("Please wait...");
+		$('.jumbotron h1').text("Hello, I'm Weichen!");
+		$("#testjs").text("Please wait =)");
 		$(".jumbotron p").toggleClass("active");
 	});
 
